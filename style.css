@@ -1,0 +1,165 @@
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+	outline: none;
+}
+
+html {
+	font-size: 12px;
+	font-family: 'Droid Sans', sans-serif;
+}
+
+h2 {
+	margin: 0;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 1em;
+	margin: 25px 0 15px 0;
+	font-weight: normal;
+	border-bottom: solid 1px #ccc;
+}
+
+.js-grid {
+	width: 500px;
+	height: 500px;
+	background: url('grid.png') no-repeat;
+	background-size: 100% 100%;
+	border: solid 1px #999999;
+	position: relative;
+	float: left;
+}
+
+.js-controls {
+	float: left;
+	padding: 10px;
+	width: 250px;
+}
+
+	.js-rotate {
+		width: 50%;
+	}
+
+	.js-report {
+		width: 100%
+	}
+
+	.js-robot {
+		position: absolute;
+		width: 100px;
+		height: 100px;
+		top: 200px;
+		left: 200px;
+		background: url(robot.png);
+		opacity: 0;
+	}
+		.js-robot.placed {
+			opacity: 1;
+		}
+
+	.js-hidden {
+		display: none;
+	}
+
+
+
+.js-reporting {
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+
+
+
+
+.btn  {
+	background: #272523;
+	border: none;
+	color: #ffffff;
+	padding: 10px;
+	text-decoration: none;
+	text-transform: uppercase;
+	cursor: pointer;
+	font-size: .9em;
+}
+.btn:hover {
+	background:  #4d4d4d;
+}
+
+	.btn-primary {
+		width: 100%;
+		background-image: linear-gradient(to bottom, #5ca8db, #246e9c);
+		border: solid 1px #5ca8db;
+		font-size: 1.5em;
+	}
+		.btn-primary:hover {
+			background: #5ca8db
+		}
+
+.form-row {
+	margin-bottom: 10px;
+	display: flex;
+	vertical-align: middle;
+}
+
+
+.form-label {
+	cursor: pointer;
+	width: 40%;
+	vertical-align: middle;
+	padding: 6px;
+}
+.form-element {
+	width: 60%;
+}
+
+select {
+	border: solid 1px #999;
+	padding: 5px;
+	display: inline-block;
+	vertical-align: middle;
+	width: 100%;
+}
+
+.text-center {
+	text-align: center;
+}
+
+
+
+@font-face {
+	font-family: 'icomoon';
+	src:  url('icomoon.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon' !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-move:before {
+	content: "\e900";
+}
+.icon-rotate-left:before {
+	content: "\e901";
+}
+.icon-rotate-right:before {
+	content: "\e902";
+}
+.icon-info:before {
+	content: "\e903";
+}
+
+.icon-big  {
+	font-size: 20px;
+}

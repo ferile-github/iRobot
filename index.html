@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>iRobot</title>
+	<link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!--
+==================================================================
+Developer Notes:
+I have kept the code to a minimum, so I have not used any CSS frameworks and written
+all styling from scratch. I used jQuery for DOM manipulation mainly for time restraints,
+although I could refactor the code into vanilla JS with more time.
+
+I used icons for the interface to try and make it as intuitive as possible.
+
+==================================================================
+-->
+
+<div class="js-grid">
+	<div class="js-robot"></div>
+</div>
+
+<div class="js-controls">
+	<div class="form-row">
+		<label class="form-label" for="compass">Direction</label>
+		<div class="form-element">
+			<select id="compass">
+				<option value="0">North</option>
+				<option value="90">East</option>
+				<option value="180" >South</option>
+				<option value="270">West</option>
+			</select>
+		</div>
+	</div>
+	<div class="form-row">
+		<label class="form-label" for="locationX">X Position</label>
+		<div class="form-element">
+			<select id="locationX">
+				<option value="0">0</option>
+				<option value="1">1</option>
+				<option value="2" >2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+			</select>
+		</div>
+	</div>
+	<div class="form-row">
+		<label class="form-label" for="locationY">Y Position</label>
+		<div class="form-element">
+			<select id="locationY">
+				<option value="0">0</option>
+				<option value="1">1</option>
+				<option value="2" >2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+			</select>
+		</div>
+	</div>
+
+	<div class="form-row text-center">
+		<button class="btn btn-primary js-place">Place robot</button>
+	</div>
+
+
+	<div class="js-movement-controls js-hidden">
+
+		<div class="form-row text-center">
+			<button class="btn js-rotate" data-rotate-direction="left">
+				<i class="icon-big icon-rotate-left"></i>
+			</button>
+			<button class="btn  btn-primary js-move ">
+				<i class="icon-big icon-move"></i>
+			</button>
+			<button class="btn js-rotate" data-rotate-direction="right">
+				<i class="icon-big icon-rotate-right"></i>
+			</button>
+		</div>
+
+
+		<div class="form-row text-center">
+			<button class="btn js-report">
+				<i class="icon-big icon-info"></i>
+			</button>
+		</div>
+
+		<div class="js-reporting text-center"></div>
+
+	</div>
+
+</div>
+
+
+<script src="jquery-3.1.1.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
